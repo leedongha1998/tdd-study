@@ -10,7 +10,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@DataJpaTest(showSql=true)
+@DataJpaTest(showSql=true, properties = "classpath:test-application.properties")
 @Sql("/sql/user-repository-test-data.sql")
 public class UserRepositoryTest {
 
